@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <!-- Page Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    <!-- Fix for custom scrollbar if JS is disabled-->
+    <noscript>
+        <style>
+          /**
+          * Reinstate scrolling for non-JS clients
+          */
+          .simplebar-content-wrapper {
+            overflow: auto;
+          }
+        </style>
+    </noscript>
+
+    <!-- Page Title -->
+    <title>Growthmed Test</title>
+    
+</head>
+
+<body class="">
+
+    <!-- Main Section-->
+    <main class="mt-0 ">
+        <!-- Page Content Goes Here -->
+
+        <!-- Feature Content-->
+        <section class="intro">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container">
+            
+                    <!-- Logo-->
+                    <a class="d-flex align-items-center py-4 lh-1 text-decoration-none" href="/">
+                        <!-- Logo SVG Icon-->
+                        <span class="d-block text-success me-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 81 81" width="81" height="81">
+                                <title>&lt;Compound Path&gt; + &lt;Path&gt; + &lt;Compound Path&gt; copy 2</title>
+                                <defs>
+                                    <image width="76" height="77" id="img1" href="data:image/png;base64,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"/>
+                                </defs>
+                                <style>
+                                </style>
+                                <use id="&lt;Compound Path&gt; + &lt;Path&gt; + &lt;Compound Path&gt; copy 2" href="#img1" x="2" y="2"/>
+                            </svg>
+                        </span>
+                        <!--/ Logo SVG Icon -->
+                        <span class="text-body text-uppercase logo-text">weight loss center</span>
+                    </a>
+                    <!-- / Logo-->
+            
+                    <!-- Mobile Menu Btn-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                    <!-- /Mobile Menu Btn-->
+            
+                    <div class="collapse navbar-collapse justify-content-lg-end align-items-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-center px-0 mx-2 active" href="/">home</a>
+                            </li>    
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-0 mx-2 text-center" href="#about">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-0 mx-2 text-center" href="#services">services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-0 mx-2 text-center" href="#results">our results</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-0 mx-2 text-center" href="#procedures">procedures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-0 mx-2 text-center" href="#contact">contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-tel text-uppercase position-relative mx-2 text-center" href="tel:8001234567">(800) 123-4567</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- / Navbar-->
+            <div class="container pt-4 pt-md-6 pt-lg-8 position-relative">
+                <div class="row gx-10 align-items-center">
+                    <div class="d-flex align-items-center col-12 text-center flex-column flex-lg-row text-lg-start" data-aos="fade-in">
+                        <div class="slider-wrap col-12 col-md-6">
+                            <div class="col-12 col-md-6">
+                                <h1 class="mb-4 main-title">
+                                    Leading the Field in <br>
+                                    <span>Weight Loss</span> <b>Surgery</b>
+                                </h1>
+                                <h2 class="fs-5 fw-light lh-base text-uppercase main-description">
+                                    "Before I was Alive <br>
+                                    <span class="d-inline-block px-2">and now im living"</span>
+                                </h2>
+
+                                <div class="mt-4 pt-1 d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
+                                    <a href="#" class="d-inline-block btn btn-success m-0 btn-custom btn-custom__gradient text-uppercase" role="button">read more</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h1 class="mb-4 main-title">
+                                    Leading the Field in <br>
+                                    <span>Weight Loss</span> <b>Surgery</b>
+                                </h1>
+                                <h2 class="fs-5 fw-light lh-base text-uppercase main-description">
+                                    "Before I was Alive <br>
+                                    <span class="d-inline-block px-2">and now im living"</span>
+                                </h2>
+
+                                <div class="mt-4 pt-1 d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
+                                    <a href="#" class="d-inline-block btn btn-success m-0 btn-custom btn-custom__gradient text-uppercase" role="button">read more</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h1 class="mb-4 main-title">
+                                    Leading the Field in <br>
+                                    <span>Weight Loss</span> <b>Surgery</b>
+                                </h1>
+                                <h2 class="fs-5 fw-light lh-base text-uppercase main-description">
+                                    "Before I was Alive <br>
+                                    <span class="d-inline-block px-2">and now im living"</span>
+                                </h2>
+
+                                <div class="mt-4 pt-1 d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
+                                    <a href="#" class="d-inline-block btn btn-success m-0 btn-custom btn-custom__gradient text-uppercase" role="button">read more</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h1 class="mb-4 main-title">
+                                    Leading the Field in <br>
+                                    <span>Weight Loss</span> <b>Surgery</b>
+                                </h1>
+                                <h2 class="fs-5 fw-light lh-base text-uppercase main-description">
+                                    "Before I was Alive <br>
+                                    <span class="d-inline-block px-2">and now im living"</span>
+                                </h2>
+
+                                <div class="mt-4 pt-1 d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
+                                    <a href="#" class="d-inline-block btn btn-success m-0 btn-custom btn-custom__gradient text-uppercase" role="button">read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <picture class="position-relative z-index-20">
+                                <img class="img-fluid rounded-5" src="./assets/images/slide-1.png"
+                                     alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Feature Content-->
+
+        <!-- Procedures-->
+        <section id="procedures" class="procedure bg-white position-relative z-index-10 m-0" data-aos="fade-in">
+            <div class="container pt-4 pb-5">
+                <div class="procedure-wrap row gap-3 gap-lg-5 justify-content-center align-content-center mx-0">
+                    <!-- Procedure -->
+                    <div class="procedure-item m-0 col-12 col-lg-4 d-flex text-center flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="000">
+                        <picture class="procedure-icon d-flex justify-content-center align-items-center">
+                            <img class="h-100 w-auto" src="./assets/images/procedure/procedure-1.png" alt="">
+                        </picture>
+                        <p class="procedure-title fs-4 fw-medium mb-2 mt-3 text-uppercase">ONE KIND OF WEIGHT LOSS PROCEDURE</p>
+                        <p class="procedure-description opacity-75 text-center fs-7">Eros quis risus sociis phasellus tortor sit, pellentesque, tristique urna placerat? Turpis, magna velit placerat. Mid cum tempor nec, eu, pulvinar adipiscing turpis!</p>
+                        <a href="#" class="d-inline-block btn btn-success m-0 btn-custom btn-custom__white text-uppercase" role="button">learn more</a>
+                    </div>
+                    <!-- /Procedure-->
+                    <!-- Procedure -->
+                    <div class="procedure-item m-0 col-12 col-lg-4 d-flex text-center flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="100">
+                        <picture class="procedure-icon d-flex justify-content-center align-items-center">
+                            <img class="h-100 w-auto" src="./assets/images/procedure/procedure-2.png" alt="">
+                        </picture>
+                        <p class="procedure-title fs-4 fw-medium mb-2 mt-3 text-uppercase">ANOTHER WEIGHT LOSS PROCEDURE</p>
+                        <p class="procedure-description opacity-75 text-center fs-7">Eros quis risus sociis phasellus tortor sit, pellentesque, tristique urna placerat? Turpis, magna velit placerat. Mid cum tempor nec, eu, pulvinar adipiscing turpis!</p>
+                        <a href="#" class="d-inline-block btn btn-success m-0 btn-custom btn-custom__white text-uppercase" role="button">learn more</a>
+                    </div>
+                    <!-- /Procedure-->
+                    <!-- Procedure -->
+                    <div class="procedure-item m-0 col-12 col-lg-4 d-flex text-center flex-column align-items-center justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
+                        <picture class="procedure-icon d-flex justify-content-center align-items-center">
+                            <img class="h-100 w-auto" src="./assets/images/procedure/procedure-3.png" alt="">
+                        </picture>
+                        <p class="procedure-title fs-4 fw-medium mb-2 mt-3 text-uppercase">A THIRD WEIGHT LOSS PROCEDURE</p>
+                        <p class="procedure-description opacity-75 text-center fs-7">Eros quis risus sociis phasellus tortor sit, pellentesque, tristique urna placerat? Turpis, magna velit placerat. Mid cum tempor nec, eu, pulvinar adipiscing turpis!</p>
+                        <a href="#" class="d-inline-block btn btn-success m-0 btn-custom btn-custom__white text-uppercase" role="button">learn more</a>
+                    </div>
+                    <!-- /Procedure-->
+                </div>
+            </div>
+        </section>
+        <!-- / Procedures-->
+
+        <!-- Contact Details & Form-->
+        <section id="contact" class="contact" data-aos="fade-in">
+            <div class="container">
+                <div class="contact-wrap row pt-5 m-0 align-items-center">
+                    <!-- Contact Form-->
+                    <div class="col-12 col-lg-6">
+                        <h2 class="contact-title text-uppercase position-relative">
+                            we are <br><b>amazing!</b>
+                        </h2>
+                        <p class="contact-description w-100 mb-5">
+                            Aliquet platea elementum massa vel! Dis nascetur scelerisque vut integer placerat tincidunt porta tristique auctor sociis parturient porta! Platea magnis hac! Nunc. Etiam phasellus? Penatibus. Tristique tristique mauris?
+                        </p>
+                    </div>
+                    <div class="contact-form col-12 col-lg-6 mx-auto mx-lg-0 px-5 position-relative py-6 bg-white">
+                        <picture class="position-absolute contact-img z-index-10">
+                            <img class="h-100 w-auto" src="./assets/images/airplane.png" alt="">
+                        </picture>
+                        <div class="d-flex flex-column flex-md-row mb-6 align-items-baseline">
+                            <h2 class="contact-header col-6 text-uppercase">contact</h2>
+                            <a class="contact-phone col-6 text-start text-md-end" href="tel:8001234567">800.123.4567</a>
+                        </div>
+                        <form>
+                            <div class="row g-5">
+                                <!-- Name-->
+                                <div class="col-12 mt-3">
+                                    <input type="text" class="form-control" name="name" placeholder="Name">
+                                </div>
+                                <!-- / Name-->
+
+                                <!-- Email-->
+                                <div class="col-12 mt-3">
+                                    <input type="email" class="form-control" name="email" placeholder="Email">
+                                </div>
+                                <!-- / Email-->
+
+                                <!-- Telephone-->
+                                <div class="col-12 mt-3">
+                                    <input type="text" class="form-control" name="telephone"
+                                           placeholder="Phone">
+                                </div>
+                                <!-- / Telephone-->
+
+                                <!-- Project Information-->
+                                <div class="col-12 mt-3">
+                                    <textarea name="about" class="form-control" cols="30" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <!-- / Project Information-->
+
+                                <!-- Submit btn-->
+                                <div class="col-12 d-flex mt-4">
+                                    <button class="btn btn-custom btn-custom__gradient m-0" type="submit">Submit</button>
+                                </div>
+                                <!-- / Submit Btn-->
+                            </div>
+                        </form>
+                    </div>
+                    <!-- / Contact Form-->
+                </div>
+            </div>
+        </section>
+        <!-- Contact Details & Form-->
+    </main>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    <!--Footer-->
+    <footer class="footer pb-6  " data-aos="fade-in">
+    
+        <div class="container pt-7">
+            <div class="d-flex justify-content-center mb-3">
+    
+                <!-- Footer Logo-->
+                <a class="d-flex align-items-center lh-1 text-white me-1 text-decoration-none mb-4 mb-md-0"
+                   href="/">
+                    <picture class="d-flex me-1 justify-content-center align-items-center">
+                        <img class="h-100 w-auto" src="./assets/images/logo-footer.png" alt="">
+                    </picture>
+                    <span class="text-uppercase">WEIGHT LOSS <br>CENTER</span>
+                </a>
+                <!-- /Footer Logo-->
+            </div>
+    
+            <p class="text-center text-white">1234 First Street, Suite 100 - Santa Monica, CA 90405  | <a class="text-white" href="tel:8001234567">800.123.4567</a></p>
+    
+            <!-- Footer socials-->
+            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                <li class="mx-2">
+                    <a href="#" class="text-white text-decoration-none opacity-50-hover transition-opacity">
+                        <picture class="d-flex justify-content-center align-items-center">
+                            <img class="h-100 w-auto" src="./assets/images/socials/social-1.svg" alt="social image">
+                        </picture>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="#" class="text-white text-decoration-none opacity-50-hover transition-opacity">
+                        <picture class="d-flex justify-content-center align-items-center">
+                            <img class="h-100 w-auto" src="./assets/images/socials/social-2.svg" alt="social image">
+                        </picture>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="#" class="text-white text-decoration-none opacity-50-hover transition-opacity">
+                        <picture class="d-flex justify-content-center align-items-center">
+                            <img class="h-100 w-auto" src="./assets/images/socials/social-3.svg" alt="social image">
+                        </picture>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="#" class="text-white text-decoration-none opacity-50-hover transition-opacity">
+                        <picture class="d-flex justify-content-center align-items-center">
+                            <img class="h-100 w-auto" src="./assets/images/socials/social-4.svg" alt="social image">
+                        </picture>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="#" class="text-white text-decoration-none opacity-50-hover transition-opacity">
+                        <picture class="d-flex justify-content-center align-items-center">
+                            <img class="h-100 w-auto" src="./assets/images/socials/social-5.svg" alt="social image">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+            <!-- Footer socials-->
+    
+            <!-- Footer bottom-->
+            <div class="footer-bottom border-top pt-3 mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <p class="small text-white copyright m-0">Copyright 2018 Weight Loss Center  | <a class="text-white" href="#">All Rights Reserved</a></p>
+            </div>
+        </div>
+    
+    </footer>
+    <!-- / Footer-->
+    
+    <!-- Additional imports (modals, offcanvas)-->
+    <!-- Modal Imports-->
+    <!-- Video Modal Iframe-->
+    <!-- Start Video Modal-->
+    <div class="modal fade modal-video"
+        id="videoIframeModal"
+        tabindex="-1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Content-->
+                <div class="modal-body p-0">
+                    <button type="button"
+                    class="btn btn-link text-decoration-none text-white opacity-75-hover transition-all position-absolute end-0 top-0 z-index-20"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"><i class="ri-close-fill"></i></button>
+    
+                    <!-- Plyr HTML-->
+                    <div id="player" class="modal-video-player plyr__video-embed">
+                        <iframe
+                        src=""
+                        allowfullscreen
+                        allowtransparency
+                        allow="autoplay"
+                      ></iframe>
+                    </div>
+                    <!--/ Plyr HTML-->
+                </div>
+                <!-- / Modal Content-->
+            </div>
+        </div>
+    </div>
+    <!--/ Video Modal --><!-- / Additional imports-->
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+</body>
+
+</html>
+
